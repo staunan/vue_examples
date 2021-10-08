@@ -1,7 +1,10 @@
 <template>
 	<div class="header">
-		<div class="drawer_trigger" @click="handleDrawerClick">
+		<div class="menu_item drawer_trigger" @click="handleDrawerClick">
 			<font-awesome-icon :icon="myIcon" />
+		</div>
+		<div class="siteTitle">
+			Vue Examples
 		</div>
 	</div>
 </template>
@@ -33,7 +36,7 @@ export default {
 	display: flex;
 	align-items: center;
 }
-.drawer_trigger {
+.menu_item{
 	height: 50px;
 	width: 50px;
 	cursor: pointer;
@@ -41,8 +44,20 @@ export default {
 	justify-content: center;
 	align-items: center;
 }
+.drawer_trigger {
+}
 .drawer_trigger:hover{
 	background: #333;
 	color: #fff;
+}
+.siteTitle{
+	font-size: 24px;
+	font-weight: bold;
+	height: 50px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 15px;
 }
 </style>

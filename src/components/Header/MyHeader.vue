@@ -44,8 +44,6 @@ export default {
 	justify-content: center;
 	align-items: center;
 }
-.drawer_trigger {
-}
 .drawer_trigger:hover{
 	background: #333;
 	color: #fff;
